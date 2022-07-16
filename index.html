@@ -1,0 +1,37 @@
+<!-- Project: To Do Application 
+     Dev: Georgi Nikolov
+     Date: July 16, 2022
+     
+     Resources Used: https://www.youtube.com/watch?v=y51Cv4wnsPw
+     Description: A basic web application using HTML, CSS, JavaScript,
+     and an emphasis on accessability and responsive design. (persistent data as well)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <main>
+        <!--Initial section that contains the input form and button-->
+        <section class="ItemEntry">
+            <form id="itemEntryForm">
+                <label for="newItem">New Item</label>
+                <input id="newItem" type="text" size="40" autocomplete="off" placeholder="Add Item" tabindex="0" />
+
+                <button id="addItemBtn" class="Button" title="Add new item" aria-label="Add new item to List" tabindex="0">+</button>
+            </form>
+        </section>
+
+        <!--Subsequent section which will contain the persistent data, in the form of a list-->
+        <section>
+
+        </section>
+
+    </main>
+</body>
+</html>
