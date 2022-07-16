@@ -1,0 +1,43 @@
+$default-font-color: #000;
+$background-color: rgb(103, 173, 219);
+$container-bgColor: rgb(201, 201, 201);
+$container-borderColor: black;
+
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16;
+    font-family: "Times", sans-serif;
+    color: $default-font-color;
+    width: 100%;
+    min-height: 100%;
+
+    @include mq(768px) {
+        font-size: 22px;
+    }
+}
+
+body {
+    padding: 20px;
+    background-color: $background-color;
+}
+
+section {
+    background-color: $container-bgColor;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid $container-borderColor;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}

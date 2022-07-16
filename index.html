@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css"
     <title>To Do List</title>
 </head>
 <body>
@@ -21,14 +22,42 @@
         <section class="ItemEntry">
             <form id="itemEntryForm">
                 <label for="newItem">New Item</label>
-                <input id="newItem" type="text" size="40" autocomplete="off" placeholder="Add Item" tabindex="0" />
+                <input id="newItem" type="text" size="40" autocomplete="off" 
+                placeholder="Add Item" tabindex="0" />
 
-                <button id="addItemBtn" class="Button" title="Add new item" aria-label="Add new item to List" tabindex="0">+</button>
+                <button id="addItemBtn" class="Button" title="Add new item" 
+                aria-label="Add new item to List" tabindex="0">+</button>
             </form>
         </section>
 
         <!--Subsequent section which will contain the persistent data, in the form of a list-->
-        <section>
+        <section class="listContainer">
+            <!-- the title of the section, along with a button to clear the list-->
+            <div class="listTitle">
+                <h1>To Do List</h1>
+                <button id="clearItems" class="Button" title="Clear the list" 
+                aria-label="remove all items from the list"
+                tabindex="0">Clear</button>
+            </div>
+            <!-- hr = horizontal rule (aka - a line across the page)-->
+            <hr/>
+
+            <div id="listItems">
+                <!-- REMOVE PLACEHOLDERS-->
+                <div class="Item">
+                    <input type="checkbox" id="1" tabindex="0" />
+                    <label for="1">item1</label>
+                </div>
+                <div class="Item">
+                    <input type="checkbox" id="2" tabindex="0" />
+                    <label for="2">item2</label>
+                </div>
+                <div class="Item">
+                    <input type="checkbox" id="3" tabindex="0" />
+                    <label for="3">item3</label>
+                </div>
+                <!-- END OF PLACEHOLDERS -->
+            </div>
 
         </section>
 
