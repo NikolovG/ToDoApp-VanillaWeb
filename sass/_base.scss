@@ -1,7 +1,13 @@
 $default-font-color: #000;
-$background-color: rgb(103, 173, 219);
-$container-bgColor: rgb(201, 201, 201);
+$background-color: rgb(66, 159, 221);
+$container-bgColor: rgb(220, 220, 220);
 $container-borderColor: black;
+$textBox-borderColor: lightgray;
+$button-textColor: white;
+$button-hoverColor: black;
+$add-button-color: rgb(80, 235, 80);
+$clear-button-colo: rgb(213, 100, 100);
+
 
 @mixin mq($size) {
     @media only screen and (min-width: $size) {
