@@ -16,15 +16,14 @@ const initApp = () => {
 
     // Procedural 
     // load list object
-    // refresh the page
     refreshThePage();
 }
 
 const refreshThePage = () => {
     clearListDisplay();
-    // renderList();
-    // clearItemEntryField();
-    // setFocusOnItemEntry();
+    renderList();
+    clearItemEntryField();
+    setFocusOnItemEntry();
 }
 
 const clearListDisplay = () => {
@@ -74,4 +73,12 @@ const addClickListenerToCheckbox = (checkbox) => {
             refreshThePage();
         }, 1000);
     });
+};
+
+const clearItemEntryField = () => {
+    document.getElementById("newItem").value = "";
+};
+
+const setFocusOnItemEntry = () => {
+    document.getElementById("newItem").focus();
 };
